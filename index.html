@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+           Segunda entrega del proyecto final
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+
+
+    <body>
+       <div class="contenedor ">
+
+        <div>
+          <h1>Simulador de prestamos</h1>
+          <p>Ingrese la cantidad deseada (recuerde que el rango es de 1000$ a 50000$ pesos) en un rango de 1 a 12 meses</p>
+        </div>
+
+
+        <form id="idForm" >
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Monto</label>
+            <input type="text" class="form-control w-25" id="idMonto" placeholder="Ingrese la cantidad deseada">
+                
+          </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Meses</label>
+              <input type="text" class="form-control w-25" id="idMeses" placeholder="Ingrese el plazo a pagar">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Cotizar</button>
+        </form>
+      </div>
+        
+      <div id="resultado">
+      </div>
+
+      <br>
+      <button id="btn-tareas" class="btn btn-primary">Mostrar cotizaciones</button>
+      <br>
+
+      <div id="divprestamos">
+      </div>
+
+        <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+
+    </body>
+
+</html>
